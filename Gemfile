@@ -5,9 +5,11 @@ gem 'rails',                   '4.2.0'
 gem 'pg'
 gem 'slim'
 gem 'unicorn'
-
 gem 'friendly_id'
 gem 'resque'
+gem 'activeadmin', '~> 1.0.0.pre1'
+gem 'devise'
+gem 'omniauth-facebook'
 
 # external services
 gem 'newrelic_rpm'
