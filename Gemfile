@@ -33,6 +33,10 @@ gem 'oily_png'
 gem 'color-schemer'
 gem 'toolkit'
 
+gem "refile", require: ["refile/rails", "refile/image_processing"]
+gem "mini_magick"
+gem "aws-sdk"
+
 
 group :test, :development do
   gem 'rspec-rails'
