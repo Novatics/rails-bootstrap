@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
-	mount_uploader :avatar, AvatarUploader
+	
+  mount_uploader :avatar, AvatarUploader
+	has_many :photos
+  accepts_nested_attributes_for :photos
 
 	def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|

@@ -10,7 +10,7 @@ gem 'resque'
 gem 'activeadmin', '~> 1.0.0.pre1'
 gem 'devise'
 gem 'omniauth-facebook'
-gem 'fog'
+
 
 # external services
 gem 'newrelic_rpm'
@@ -22,6 +22,7 @@ gem 'rails-observers'
 
 # assets
 gem 'sass-rails', '~> 5.0'
+gem "compass-rails", github: "Compass/compass-rails", branch: "master"   
 gem 'uglifier', '~> 2.7.1'
 gem 'font_assets'
 gem 'modernizr-rails'
@@ -35,7 +36,8 @@ gem 'oily_png'
 gem 'color-schemer'
 gem 'toolkit'
 
-gem "refile", require: ["refile/rails", "refile/image_processing"]
+gem 'fog'
+gem "carrierwave"
 gem "mini_magick"
 gem "aws-sdk"
 
