@@ -1,0 +1,8 @@
+<div class="gallery">
+	<% user.photos.each do |photo| %>
+			<div class="photo-container" style="display:inline;">
+				<%= image_tag(photo.image.url, size: "200x200") %>
+			</div>
+	<% end %>
+	</ul>
+</div>

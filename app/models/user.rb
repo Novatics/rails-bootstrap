@@ -1,7 +1,8 @@
 class User < ActiveRecord::Base
-	
+  
+  acts_as_list	
   mount_uploader :avatar, AvatarUploader
-	has_many :photos
+	has_many :photos, dependent: :destroy
   accepts_nested_attributes_for :photos
 
 	def self.from_omniauth(auth)

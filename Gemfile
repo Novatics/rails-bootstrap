@@ -27,6 +27,8 @@ gem 'uglifier', '~> 2.7.1'
 gem 'font_assets'
 gem 'modernizr-rails'
 gem 'selectivizr-rails'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
 # compass and plugins
 gem 'compass-normalize'
 gem 'singularitygs'
@@ -40,6 +42,9 @@ gem 'fog'
 gem "carrierwave"
 gem "mini_magick"
 gem "aws-sdk"
+
+gem 'acts_as_list'
+gem 'activeadmin-sortable'
 
 
 group :test, :development do
