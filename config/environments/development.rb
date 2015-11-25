@@ -23,6 +23,10 @@ RailsHerokuBootstrap::Application.configure do
   # Automatically inject JavaScript needed for LiveReload
   config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
 
+  ENV['S3_KEY'] = "XXXX"
+  ENV['S3_SECRET'] = "XXXX"
+  ENV['S3_REGION'] = "XXXX"
+
   config.after_initialize do
     Bullet.enable = true
     Bullet.alert = true

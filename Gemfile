@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.2.1'
+ruby '2.2.3'
 
-gem 'rails',                   '4.2.0'
+gem 'rails',                   '4.2.3'
 gem 'pg'
 gem 'slim'
 gem 'unicorn'
@@ -10,9 +10,7 @@ gem 'resque'
 gem 'activeadmin', '~> 1.0.0.pre1'
 gem 'devise'
 gem 'omniauth-facebook'
-gem 'carrierwave'
-gem 'mini_magick'
-gem 'fog'
+
 
 # external services
 gem 'newrelic_rpm'
@@ -24,11 +22,13 @@ gem 'rails-observers'
 
 # assets
 gem 'sass-rails', '~> 5.0'
-gem "compass-rails", github: "Compass/compass-rails", branch: "master"
+gem "compass-rails", github: "Compass/compass-rails", branch: "master"   
 gem 'uglifier', '~> 2.7.1'
 gem 'font_assets'
 gem 'modernizr-rails'
 gem 'selectivizr-rails'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
 # compass and plugins
 gem 'compass-normalize'
 gem 'singularitygs'
@@ -37,6 +37,14 @@ gem 'singularity-extras'
 gem 'oily_png'
 gem 'color-schemer'
 gem 'toolkit'
+
+gem 'fog'
+gem "carrierwave"
+gem "mini_magick"
+gem "aws-sdk"
+
+gem 'acts_as_list'
+gem 'activeadmin-sortable'
 
 
 group :test, :development do

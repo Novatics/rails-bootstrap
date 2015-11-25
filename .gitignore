@@ -8,3 +8,4 @@ public/uploads
 worklog
 *.sublime-project
 *.sublime-workspace
+config/database.yml
